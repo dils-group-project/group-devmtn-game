@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import menuIcon from "./img/menu.svg";
+import gameFront from "./img/arcade.svg";
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
       </div>
       {/* Body */}
       <div className="body-container">
-        <div className="game-front">
+        <div
+          className="game-front"
+          style={{ backgroundImage: `url(${gameFront})` }}
+        >
           <div className="screen">Screen</div>
         </div>
       </div>
