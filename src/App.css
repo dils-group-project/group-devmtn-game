@@ -27,7 +27,13 @@ body {
   padding-top: 50px;
   height: 100vh;
   width: 100%;
-  background-color: #050209;
+  background: rgb(42, 41, 60);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 41, 60, 1) 0%,
+    rgba(26, 26, 77, 1) 35%,
+    rgba(80, 41, 102, 1) 100%
+  );
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -57,7 +63,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #dd2985;
+  background-color: #7a3ca3;
   z-index: -1;
   transition: ease 100ms;
 }
@@ -75,14 +81,15 @@ body {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding-top: 257px;
+  padding-top: 260px;
 }
 
 .screen {
-  height: 395px;
-  width: 523px;
-  background-color: black;
+  height: 343px;
+  width: 495px;
+  background-color: #120f15;
   border-radius: 2px;
+  border-radius: 28px;
 }
 
 /* LOGIN SCREEN */
@@ -105,7 +112,7 @@ body {
   justify-content: center;
 }
 input {
-  background-color: black;
+  background-color: #120f15;
   height: 64px;
   color: white;
   border: 3px solid white;
@@ -120,14 +127,14 @@ input {
   transition: background-color 200ms ease;
 }
 input:hover {
-  border: 3px solid #dd2985;
+  border: 3px solid #7a3ca3;
 }
 input:focus {
   border: none;
-  background-color: #dd2985;
+  background-color: #7a3ca3;
   color: black;
   padding: 23px;
 }
 input:focus::-webkit-input-placeholder {
-  color: #941f5b;
+  color: rgb(65, 35, 85);
 }
