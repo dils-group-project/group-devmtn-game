@@ -116,7 +116,8 @@ input {
   text-transform: uppercase;
   outline: none;
   box-sizing: border-box;
-  transition: ease 200ms;
+  transition: border 0ms, padding 0ms;
+  transition: background-color 200ms ease;
 }
 input:hover {
   border: 3px solid #dd2985;
