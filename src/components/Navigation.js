@@ -11,7 +11,12 @@ const Navigation = () => {
             className="menu-icon"
             style={{ backgroundImage: `url(${menuIcon})` }}
           />
-          <div className="play-btn">play game</div>
+          <div className="login-nav-btn-container">
+            <a className="play-btn" href="/login">
+              play
+            </a>
+            {/* <div className="play-btn">play game</div> */}
+          </div>
         </div>
       </div>
     </div>

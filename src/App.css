@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 2;
 }
 
 .container {
@@ -27,17 +28,12 @@ body {
   padding-top: 50px;
   height: 100vh;
   width: 100%;
-  background: rgb(42, 41, 60);
-  background: linear-gradient(
-    180deg,
-    rgba(42, 41, 60, 1) 0%,
-    rgba(26, 26, 77, 1) 35%,
-    rgba(80, 41, 102, 1) 100%
-  );
+  background: rgb(32, 31, 48);
+
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .menu-icon {
@@ -46,14 +42,38 @@ body {
   cursor: pointer;
 }
 
+.link-btn {
+  color: white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0 5px;
+  cursor: pointer;
+  position: relative;
+}
+
 .play-btn {
   color: white;
   border: solid 2px white;
   padding: 10px 30px;
   text-transform: uppercase;
   font-weight: 800;
+  margin: 0 5px;
   cursor: pointer;
   position: relative;
+}
+
+.submit-btn {
+  color: black;
+  border: solid 2px white;
+  padding: 23px 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0 5px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
 }
 
 .play-btn::after {
@@ -73,31 +93,45 @@ body {
 }
 
 .game-front {
-  width: 900px;
-  height: 90vh;
-  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
   padding-top: 260px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
-.screen {
-  height: 343px;
-  width: 495px;
+.black-screen {
+  height: 100%;
+  width: 870px;
   background-color: #120f15;
-  border-radius: 2px;
-  border-radius: 28px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+.screen {
+  height: 100%;
+  width: 870px;
+  padding: 110px;
+  box-sizing: border-box;
+  z-index: 2;
 }
 
 /* LOGIN SCREEN */
 
+.login-nav-btn-container {
+  display: flex;
+}
+
 .login-container {
   color: white;
   text-transform: uppercase;
-  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
