@@ -172,3 +172,7 @@ input:focus {
 input:focus::-webkit-input-placeholder {
   color: rgb(65, 35, 85);
 }
+
+.color {
+  color: rgb(1, 124, 1);
+}
