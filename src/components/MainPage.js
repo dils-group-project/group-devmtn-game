@@ -5,7 +5,9 @@ const MainPage = () => {
   return (
     <div className="">
       <HighScores />
-      <div className="play-btn">PLAY</div>
+      <a className="play-btn" href="/login">
+        play
+      </a>
     </div>
   );
 };
